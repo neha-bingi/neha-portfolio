@@ -164,4 +164,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 **Built with ❤️ by Neha Bingi**
 
-For questions or support, reach out at neha.bingi@example.com
+For questions or support, reach out at bingineha841@gmail.com
