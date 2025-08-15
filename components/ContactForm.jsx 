@@ -1,0 +1,35 @@
+import React from "react";
+
+const ContactForm = () => {
+  return (
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      action="/thank-you"
+      className="contact-form"
+    >
+      {/* This hidden input tells Netlify the form name */}
+      <input type="hidden" name="form-name" value="contact" />
+
+      <label>
+        Name:
+        <input type="text" name="name" required />
+      </label>
+
+      <label>
+        Email:
+        <input type="email" name="email" required />
+      </label>
+
+      <label>
+        Message:
+        <textarea name="message" required></textarea>
+      </label>
+
+      <button type="submit">Send</button>
+    </form>
+  );
+};
+
+export default ContactForm;
