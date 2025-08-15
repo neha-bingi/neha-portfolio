@@ -1,19 +1,5 @@
 "use client"
 
-import type React from "react"
-
-import ContactForm from "../components/ContactForm";
-
-export default function Contact() {
-  return (
-    <div>
-      <h2>Contact Me</h2>
-      <ContactForm />
-    </div>
-  );
-}
-
-
 import { useState } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -29,10 +15,7 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setIsSubmitting(true)
-
-    // Simulate form submission delay
     await new Promise((resolve) => setTimeout(resolve, 1000))
-
     setIsSubmitted(true)
     setIsSubmitting(false)
   }
